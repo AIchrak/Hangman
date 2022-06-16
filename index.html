@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hangman</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row"> <!--mot à trouver-->
+                <span id="traits"></span>
+            </div>
+            <div class="row" id="bouttons">
+                <button class="play" id="play">Play</button>
+                <button class="reset" id="reset">Reset</button>
+
+            </div>
+            <div class="row">
+                <p class="lives" id="lives">Remaining lives: 6</p>
+                
+            </div>
+            <div class="row">
+                <div class="col-5" id="placerlettres"> <!--alphabet-->
+                    
+                    <button class="lettrebtn" id="a">A</button>
+                    <button class="lettrebtn" id="b">B</button>
+                    <button class="lettrebtn" id="c">C</button>
+                    <button class="lettrebtn" id="d">D</button>
+                    <button class="lettrebtn" id="e">E</button>
+                    <button class="lettrebtn" id="f">F</button>
+                    <button class="lettrebtn" id="g">G</button>
+                    <button class="lettrebtn" id="h">H</button>
+                    <button class="lettrebtn" id="i">I</button>
+                    <button class="lettrebtn" id="j">J</button>
+                    <button class="lettrebtn" id="k">K</button>
+                    <button class="lettrebtn" id="l">L</button>
+                    <button class="lettrebtn" id="m">M</button>
+                    <button class="lettrebtn" id="n">N</button>
+                    <button class="lettrebtn" id="o">O</button>
+                    <button class="lettrebtn" id="p">P</button>
+                    <button class="lettrebtn" id="q">Q</button>
+                    <button class="lettrebtn" id="r">R</button>
+                    <button class="lettrebtn" id="s">S</button>
+                    <button class="lettrebtn" id="t">T</button>
+                    <button class="lettrebtn" id="u">U</button>
+                    <button class="lettrebtn" id="v">V</button>
+                    <button class="lettrebtn" id="w">W</button>
+                    <button class="lettrebtn" id="x">X</button>
+                    <button class="lettrebtn" id="y">Y</button>
+                    <button class="lettrebtn" id="z">Z</button>
+                    
+                </div>
+                <div class="col-5"> <!--image-->
+                    <img id="photo" src="i1.jpg">
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
+
+<!--
+    <button class="lettrebtn" id="a">A</button>
+                        <button class="lettrebtn" id="b">B</button>
+                        <button class="lettrebtn" id="c">C</button>
+                        <button class="lettrebtn" id="d">D</button>
+                        <button class="lettrebtn" id="e">E</button>
+                        <button class="lettrebtn" id="f">F</button>
+                        <button class="lettrebtn" id="g">G</button>
+                        <button class="lettrebtn" id="h">H</button>
+                        <button class="lettrebtn" id="i">I</button>
+                        <button class="lettrebtn" id="j">J</button>
+                        <button class="lettrebtn" id="k">K</button>
+                        <button class="lettrebtn" id="l">L</button>
+                        <button class="lettrebtn" id="m">M</button>
+                        <button class="lettrebtn" id="n">N</button>
+                        <button class="lettrebtn" id="o">O</button>
+                        <button class="lettrebtn" id="p">P</button>
+                        <button class="lettrebtn" id="q">Q</button>
+                        <button class="lettrebtn" id="r">R</button>
+                        <button class="lettrebtn" id="s">S</button>
+                        <button class="lettrebtn" id="t">T</button>
+                        <button class="lettrebtn" id="u">U</button>
+                        <button class="lettrebtn" id="v">V</button>
+                        <button class="lettrebtn" id="w">W</button>
+                        <button class="lettrebtn" id="x">X</button>
+                        <button class="lettrebtn" id="y">Y</button>
+                        <button class="lettrebtn" id="z">Z</button>
+-->
+<!--
+                        <button id="lettrebtn" class="a">A</button>
+                        <button id="lettrebtn" class="b">B</button>
+                        <button id="lettrebtn" class="c">C</button>
+                        <button id="lettrebtn" class="d">D</button>
+                        <button id="lettrebtn" class="e">E</button>
+                        <button id="lettrebtn" class="f">F</button>
+                        <button id="lettrebtn" class="g">G</button>
+                        <button id="lettrebtn" class="h">H</button>
+                        <button id="lettrebtn" class="i">I</button>
+                        <button id="lettrebtn" class="j">J</button>
+                        <button id="lettrebtn" class="k">K</button>
+                        <button id="lettrebtn" class="l">L</button>
+                        <button id="lettrebtn" class="m">M</button>
+                        <button id="lettrebtn" class="n">N</button>
+                        <button id="lettrebtn" class="o">O</button>
+                        <button id="lettrebtn" class="p">P</button>
+                        <button id="lettrebtn" class="q">Q</button>
+                        <button id="lettrebtn" class="r">R</button>
+                        <button id="lettrebtn" class="s">S</button>
+                        <button id="lettrebtn" class="t">T</button>
+                        <button id="lettrebtn" class="u">U</button>
+                        <button id="lettrebtn" class="v">V</button>
+                        <button id="lettrebtn" class="w">W</button>
+                        <button id="lettrebtn" class="x">X</button>
+                        <button id="lettrebtn" class="y">Y</button>
+                        <button id="lettrebtn" class="z">Z</button>
+-->

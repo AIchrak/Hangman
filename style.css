@@ -1,0 +1,87 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    color: palevioletred;
+}
+.lettrebtn{
+    border: 2px solid palevioletred;
+    width: 40px;
+    height: 45px;
+    margin-top: 2px;
+    background-color: black;
+}
+#photo{
+    width: auto;
+    max-height: 300px;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+    border: 5px solid palevioletred;
+}
+.row{
+    margin-top: 5px;
+    padding-top: 5px;
+    justify-self: center;
+}
+[class*="col-"]{
+    text-align: center;
+    margin-top: 30px; 
+}
+#placerlettres{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#traits{
+    display:flex;
+}
+#word{
+    margin: 0 5px 0 5px;
+}
+.reset{
+    margin-left: 10px;
+    background-color: palevioletred;
+    color: black;
+    border:2px solid black;
+}
+.play{
+    background-color: palevioletred;
+    color: black;
+    border:2px solid black ;
+}
+.play:disabled{
+    opacity: 0.5;
+}
+.lettrebtn:disabled{
+    opacity: 0.5;
+}
+@media only screen and (min-width: 700px) {
+    
+    .container{
+        grid-template-rows: auto;
+        grid-template-columns: 50%, 50%;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .col-5 {
+        width: 40%;
+        align-self: center;
+    }
+    #lettre{  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    #placerlettres{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #photo{
+        margin-left: 10px;
+    }
+}
+/*
+rgb(207, 206, 206)
+*/
